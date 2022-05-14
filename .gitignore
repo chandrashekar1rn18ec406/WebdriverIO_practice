@@ -1,0 +1,11 @@
+node_modules
+
+allure-report/
+allure-results/
+config/
+test
+screenshots
+.vscode
+second.js
+WebdriverIO_practice
+Assignments
