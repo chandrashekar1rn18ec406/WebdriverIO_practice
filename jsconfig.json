@@ -1,5 +1,5 @@
 {
-  "compilerOptions": {
-    "types": ["node", "webdriverio/sync", "@wdio/mocha-framework"]
-  }
+    "compilerOptions": {
+      "types": ["node", "webdriverio/async", "@wdio/mocha-framework", "expect-webdriverio"]
+    }
 }

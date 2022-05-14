@@ -1,18 +1,44 @@
 describe("Assignment_2 ", async () => {
   it("count the number of books showing up in the page", async () => {
     await browser.url("https://openlibrary.org/");
-    await browser.pause(3000);
-    const booksLoactor = await $$("div.book-cover > a>img");
-    const booksCount = booksLoactor.length;
+    await browser.maximizeWindow();
+
+    const booksLoactor = $$("div.book-cover > a>img");
+    const booksCount = (await booksLoactor).length;
     console.log("Total count of books = ", booksCount);
 
-    const allTitle = await booksLoactor.map(async (item) => {
-      return await item.getAttribute("title");
-    });
-    console.log(
-      "All Title = " +
-        allTitle.indexOf("On systems analysis by David Berlinski")
-    );
+    const kidsbooksLocator = $$("//a[text()='Kids']/../../..//div[contains(@id,'slick-slide')]//img");
+
+    const allTitle = await kidsbooksLocator.map(async (book) => await book.getAttribute("title"));
+    console.table(allTitle)
+
+    const bookPosition = 14;
+   
+    const bookElement = $(`//a[text()='Kids']/../../..//*[@data-slick-index='${bookPosition-1}']`)
+    
+    await bookElement.scrollIntoView();
+    await bookElement.waitForDisplayed();
+    
+    const bookImageElement = $(`//a[text()='Kids']/../../..//*[@data-slick-index='${bookPosition-1}']//img`);
+    await browser.waitUntil(async ()=> (await bookImageElement.getAttribute("src")).includes(".jpg"), {timeout: 20000})
+
+    await bookElement.saveScreenshot("bookOnly.png")
+    await browser.saveScreenshot("CompletePage.png")
+
+    // await kidsbooksLocator.map(async (book, index) => {
+    //   if (index == bookPosition-1) {
+    //     console.log(`14th Book: ${await book.getAttribute("title")}`)
+    //     await $("//a[text()='Kids']").scrollIntoView();
+    //     const nextButtonElement = $("//a[text()='Kids']/../../..//button[@aria-label='Next']");
+    //     await nextButtonElement.click();
+    //     await nextButtonElement.click();
+    //     const bookElement = $(`//a[text()='Kids']/../../..//*[@data-slick-index='${bookPosition-1}']`)
+    //     await bookElement.scrollIntoView();
+    //     await bookElement.waitForDisplayed();
+    //     await bookElement.saveScreenshot("bookOnly.png")
+    //     await browser.saveScreenshot("CompletePage.png")
+    //   }
+    // })
 
     // let i;
     // for (i = 0; i < (await booksLoactor.length); i++) {
