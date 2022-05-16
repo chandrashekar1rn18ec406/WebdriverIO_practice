@@ -1,9 +1,8 @@
 .vscode
 allure-report
 allure-results
-node_module
+node_modules
 WebdriverIO_practice
-.gitignore
 config
 
 
