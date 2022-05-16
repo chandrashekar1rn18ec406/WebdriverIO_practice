@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employees Data</title>
+  </head>
+  <body>
+    <style>
+      th {
+        color: #fff;
+      }
+    </style>
+    <h1 style="text-align: center">Employees Data</h1>
+    <table class="table table-striped">
+      <tr class="bg-info">
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+      </tr>
+
+      <tbody id="myTable"></tbody>
+    </table>
+
+    <script>
+      var EmployeeData = [
+        {
+          name: "Aletha Kuphal",
+          email: "nova_goldner@oconner.org",
+          city: "oconner",
+        },
+        {
+          name: "Lydia Abernathy II",
+          email: "carter_zboncak@schmidtjenkins.info",
+          city: "carter_zboncak",
+        },
+        {
+          name: "Kian Johnston",
+          email: "zboncak@schmidtjenkins",
+          city: "Metzhaven",
+        },
+        {
+          name: "Marjory Mante",
+          email: "adolph_wehner@lindgren.net",
+          city: "North Haileemouth",
+        },
+        { name: "Jade Ortiz", email: "deven_west@hudson.biz", city: "North" },
+        {
+          name: "Zackary Gibson",
+          email: "toni_reichert@carroll.name",
+          city: "deven_west",
+        },
+        {
+          name: "Golden Crooks",
+          email: "reichert@carroll.",
+          city: "toni_reichert",
+        },
+        {
+          name: "Kelli Rau",
+          email: "rodrick_stanton@muellermorar.net",
+          city: "Marquardthaven",
+        },
+        {
+          name: "Henry Dooley DDS",
+          email: "stanton@muellermorar.net",
+          city: "toni_reichert",
+        },
+        {
+          name: "Mr. Rickie Nienow",
+          email: "reichert@ca",
+          city: "North Madysonland",
+        },
+        {
+          name: "Drake Gusikowski",
+          email: "ton@muellermorar.",
+          city: "East Savanah",
+        },
+        {
+          name: "Gerard Corkery",
+          email: '"ick_stanton@muell"',
+          city: "Savanah",
+        },
+        { name: "Kurtis Morissette", email: "n@muelle", city: "sonland" },
+        { name: "Dejah Wuckert", email: "kailyn@schultz.org", city: "muell" },
+        { name: "Reagan Stokes", email: "yn@schultz.org", city: "schultz" },
+        {
+          name: "Mr. Jada McLaughlin",
+          email: "kenyatta@simonis.com",
+          city: "New Lilla",
+        },
+        { name: "Luna Lueilwitz IV", email: "tta@simonis.com", city: "New" },
+        {
+          name: "Destany Huels",
+          email: "beryl_oconner@schaden.info",
+          city: "New Dimitri",
+        },
+        {
+          name: "Thea Larkin",
+          email: "jamaal.keler@rutherford.net",
+          city: "Dimitri",
+        },
+        { name: "Guy Lemke MD", email: "ler@rutherford.net", city: "Lilla" },
+        {
+          name: "Sally Schaefer",
+          email: "oconner@schaden.info",
+          city: "Alejandrabury",
+        },
+        {
+          name: "Katelin Volkman",
+          email: "heloise_wolf@ortiz.biz",
+          city: "South Alejandrabury",
+        },
+        {
+          name: "Mittie McClure",
+          email: "katlynn_cruickshank@keler.info",
+          city: "Kemmerside",
+        },
+        {
+          name: "Vergie Steuber",
+          email: "emma_mayert@roob.net",
+          city: "South",
+        },
+        { name: "Orin Ziemann", email: "mayert@roob.ne", city: "rutherford" },
+        {
+          name: "Allie Ratke Sr.",
+          email: "isaias@keelingpouros.name",
+          city: "New Ona",
+        },
+        {
+          name: "Ms. Zachary Homenick",
+          email: "vicenta_heel@price.info",
+          city: "Bradfordchester",
+        },
+        {
+          name: "Nicholaus Lesch MD",
+          email: "saias@keelingp",
+          city: "Bradford",
+        },
+        { name: "Mr. Ward Bradtke", email: "s@keelingpouro", city: "keelingp" },
+        {
+          name: "Elwin Yundt",
+          email: "rt@roob.ne",
+          city: "South Marjoryville",
+        },
+        {
+          name: "Suzanne Casper",
+          email: "rlie@rolfsonrempel",
+          city: "Murazikstad",
+        },
+        {
+          name: "Mrs. Mossie Champlin",
+          email: "collier@hahnritchie.org",
+          city: "East Krystel",
+        },
+        {
+          name: "Jay Dietrich DVM",
+          email: "de@pacochacrooks.b",
+          city: "Johnsonport",
+        },
+        {
+          name: "Edwin Steuber",
+          email: "erik@waelchicain.biz",
+          city: "East Jamisontown",
+        },
+        {
+          name: "Dr. Darrel Cummerata",
+          email: "kunde@pacochacrooks.biz",
+          city: "New Destiney",
+        },
+        {
+          name: "Aracely Cummerata",
+          email: "lenore.kunde@pacochacrooks.biz",
+          city: "Rosemaryland",
+        },
+        {
+          name: "Saige Schaefer",
+          email: "jovan.collier@hahnritchie.org",
+          city: "Cyrilhaven",
+        },
+        {
+          name: "Miss Kailey Zulauf",
+          email: "an@erdman.info",
+          city: "rolfsonrempel",
+        },
+        { name: "Mrs. Emanuel Weber", email: "e@rolfsonrem", city: "mouth" },
+        { name: "Rebekah O'Hara", email: "lie@rolfsonrem", city: "Funk" },
+        {
+          name: "Frederic Barton",
+          email: "gaston@bode.biz",
+          city: "Funkmouth",
+        },
+        { name: "Magnolia Walker", email: "e@rolfsonr", city: "Vander" },
+        { name: "Cleta Emmerich", email: "veum@reinger.biz", city: "vortbury" },
+        {
+          name: "Adelbert Rogahn",
+          email: "ie@rolfsonrempe",
+          city: "Vandervortbury",
+        },
+        { name: "Evan Marks", email: "arlie@rolfsonrempel.net", city: "East" },
+        {
+          name: "Krista Shields",
+          email: "karlie@rolfsonrempel.net",
+          city: "East Kyliechester",
+        },
+        {
+          name: "Mrs. Nicolas Renner",
+          email: "alysa.veum@reinger.biz",
+          city: "Lake Kingchester",
+        },
+        {
+          name: "Christa Metz",
+          email: "darian@ortiz.net",
+          city: "West Kellie",
+        },
+        {
+          name: "Cecilia Yost",
+          email: "rian@ortiz.net",
+          city: "Antonetteport",
+        },
+        {
+          name: "Kory Schaden",
+          email: "stian@erd",
+          city: "Port Michelleshire",
+        },
+        {
+          name: "Ms. Chelsey Kulas",
+          email: "kiehn@jacobs.",
+          city: "Michelleshire",
+        },
+        {
+          name: "Blair Sporer",
+          email: "tristian@erdman.info",
+          city: "chelleshire",
+        },
+        {
+          name: "Albertha Jacobson",
+          email: "mac_smith@die",
+          city: "Zoilastad",
+        },
+        {
+          name: "Judson Wiegand",
+          email: "jayme_kiehn@jacobs.org",
+          city: "nestor",
+        },
+        { name: "Darby Morissette", email: "nestor@mohr.net", city: "Wiegand" },
+        {
+          name: "Horace Mueller",
+          email: "ith@dietrich.info",
+          city: "Gottliebburgh",
+        },
+        {
+          name: "Breanna Adams",
+          email: "mac_smith@dietrich.info",
+          city: "New Lambertmouth",
+        },
+        {
+          name: "Justice Little I",
+          email: "henderson@eic",
+          city: "South Mossie",
+        },
+        {
+          name: "Mrs. Gina Hills",
+          email: "freeda@gerhold.biz",
+          city: "corwin",
+        },
+        {
+          name: "Quincy Bins III",
+          email: "sydnie@corwin.com",
+          city: "Joaquin",
+        },
+        {
+          name: "Conor Haley",
+          email: "rick_quigley@stokesgusikowski.com",
+          city: "New Tomasaton",
+        },
+        { name: "Kian King", email: "n@padberg.org", city: "Joaquin" },
+        {
+          name: "Dr. Ken Beatty",
+          email: "lawson@padberg.org",
+          city: "EmJoaquin",
+        },
+        {
+          name: "Beulah Nolan Sr.",
+          email: "dane@durgan.org",
+          city: "Schusterfort",
+        },
+        {
+          name: "Myrna Durgan",
+          email: "henderson@eichmannoreilly.biz",
+          city: "Vonshire",
+        },
+        {
+          name: "Elliot Pfannerstill",
+          email: "smitham@leb",
+          city: "East Joaquin",
+        },
+        {
+          name: "Mrs. Jacey Schmeler",
+          email: "tte@stokeswest.name",
+          city: "North Celine",
+        },
+        {
+          name: "Antwan Block",
+          email: "rebekah.turcotte@stokeswest.name",
+          city: "Okunevashire",
+        },
+        {
+          name: "Duane Heidenreich",
+          email: "am@lebsack.info",
+          city: "vortmouth",
+        },
+        {
+          name: "Lemuel Stracke",
+          email: "smitham@lebsack.info",
+          city: "Kossfort",
+        },
+        {
+          name: "Ettie Jacobson",
+          email: "earnestine@schaden.biz",
+          city: "Ezequielview",
+        },
+        {
+          name: "Mrs. Jan Rogahn",
+          email: "gilbert@turcotte.name",
+          city: "Merrittside",
+        },
+        {
+          name: "Norval Tromp",
+          email: "ert@turcotte.name",
+          city: "South Lavinaview",
+        },
+        {
+          name: "Sigrid Gaylord",
+          email: "patience@hettingerfeest.org",
+          city: "Lake Jannie",
+        },
+        {
+          name: "Ruby Heaney MD",
+          email: "fadel@powlowskiyost.biz",
+          city: "Thomas chester",
+        },
+        {
+          name: "Zula Morar",
+          email: "mireya.fadel@powlowskiyost.biz",
+          city: "Rogahn",
+        },
+        {
+          name: "Ms. Alexys Schmidt",
+          email: "valerie@kerluke.org",
+          city: "Haylieberg",
+        },
+        {
+          name: "Jesse Wuckert",
+          email: "rebekah@pricewiegand.net",
+          city: "Lake Dean",
+        },
+        {
+          name: "Ms. Laurine Roob",
+          email: "anastasia.borer@morietteoconner.info",
+          city: "Erdman",
+        },
+        {
+          name: "Barbara Reichel",
+          email: "suzanne_smitham@lebsack.info",
+          city: "Vandervortmouth",
+        },
+        {
+          name: "Bradly Erdman IV",
+          email: "elvera@shanahanbayer.com",
+          city: "Carmelohaven",
+        },
+        {
+          name: "Maureen Haag",
+          email: "audreanne_powlowski@tillman.net",
+          city: "Port Haylieton",
+        },
+        {
+          name: "Adriana Dicki",
+          email: "harrison_romaguera@grimes.org",
+          city: "Lexibury",
+        },
+        {
+          name: "Quincy Gerhold",
+          email: "laron.cremin@macejkovic.info",
+          city: "Port Tiabury",
+        },
+        {
+          name: "Mr. Rasheed Labadie",
+          email: "nakia.howe@lebsack.info",
+          city: "Boyerfurt",
+        },
+        {
+          name: "Sean Schaefer",
+          email: "summer@zulauf.org",
+          city: "Eltonmouth",
+        },
+        {
+          name: "Keeley Bosco",
+          email: "katlyn@jenkinsmaggio.net",
+          city: "Lake Gladysberg",
+        },
+        {
+          name: "Dr. Araceli Lang",
+          email: "mavis_lehner@jacobi.name",
+          city: "Yvettemouth",
+        },
+        {
+          name: "Terrell Boyle",
+          email: "augustine.conroy@keebler.name",
+          city: "Port Reaganfort",
+        },
+        {
+          name: "Miss Emmie Muller",
+          email: "ine.conroy@keeb",
+          city: "Kaleyhaven",
+        },
+        {
+          name: "Libby Renner",
+          email: "konopelski@terry.com",
+          city: "Port Reneeside",
+        },
+        {
+          name: "Chyna West",
+          email: "briana.konopelski@terry.com",
+          city: "Langworthmouth",
+        },
+        {
+          name: "Keeley Bosco",
+          email: "katlyn@jenkinsmaggio.net",
+          city: "Lake Gladysberg",
+        },
+        {
+          name: "Rubye Jerde",
+          email: "juvenal@johnston.name",
+          city: "Gladysberg",
+        },
+        {
+          name: "Miss Darian Breitenberg",
+          email: "nal@johnston.name",
+          city: "Lake",
+        },
+        {
+          name: "Celine Ankunding",
+          email: "emery_kunze@rogahn.net",
+          city: "rogahn",
+        },
+        {
+          name: "Dr. Araceli Lang",
+          email: "mavis_lehner@jacobi.name",
+          city: "Yvettemouth",
+        },
+        {
+          name: "Esteban Von",
+          email: "cobs@flatleyboehm.biz",
+          city: "temouth",
+        },
+        {
+          name: "Everette Swift",
+          email: "gielle_jacobs@flatleyboehm.biz",
+          city: "Port",
+        },
+        {
+          name: "Terrell Boyle",
+          email: "augustine.conroy@keebler.name",
+          city: "Port Reaganfort",
+        },
+      ];
+
+      buildTable(EmployeeData);
+
+      function buildTable(data) {
+        var table = document.getElementById("myTable");
+
+        for (var i = 0; i < data.length; i++) {
+          var row = `<tr>
+							<td>${data[i].name}</td>
+							<td>${data[i].email}</td>
+							<td>${data[i].city}</td>
+					  </tr>`;
+          table.innerHTML += row;
+        }
+      }
+    </script>
+  </body>
+</html>

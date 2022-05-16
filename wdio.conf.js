@@ -23,7 +23,10 @@ exports.config = {
   specs: [
     // "./test/specs/basic.js",
     // "./test/Assignment_1/test/assingment.js",
-    "./Assignment_2/assignmenr_2.js",
+    // "./Assignment_2/assignmenr_2.js",
+    // "./test/Assignments/Assignment_2/assignmenr_2.js",
+    "./test /Assignments/Assignment_2/Assignment_2.js",
+    // "./test/Assignments/Assignment_2/Assignment_2.js",
     // "./test/Practical_webdriverIO/Test/findLastElm.js",
     // "./test/Practical_webdriverIO/Test/Restarting_browser.js",
     // "./test/Practical_webdriverIO/Test/jsAlert.js",
