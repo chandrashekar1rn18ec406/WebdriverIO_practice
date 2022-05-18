@@ -1,0 +1,10 @@
+18-5-22 18:7:19 Entry: TC001- click
+18-5-22 18:7:36 Exit: TC001- click
+18-5-22 18:7:36 Entry: Tc002 - getting element from array
+18-5-22 18:7:39 Exit: Tc002 - getting element from array
+18-5-22 18:7:39 Entry: TC003 -list in array find last element 
+18-5-22 18:7:39 Exit: TC003 -list in array find last element 
+18-5-22 18:7:40 Entry: TC004 - gettext
+18-5-22 18:7:43 Exit: TC004 - gettext
+18-5-22 18:7:43 Entry: TC005 - Add Value
+18-5-22 18:7:55 Exit: TC005 - Add Value

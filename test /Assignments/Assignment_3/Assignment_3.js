@@ -1,6 +1,6 @@
 describe("Use the hooks feature provided by wdio and generate log file", async () => {
   //First testCase is Passed
-  it("TC001- gettext", async () => {
+  it("TC001- click", async () => {
     await browser.url("https://www.freshworks.com/");
     await $(".nav-label[href='/customers/']").click();
   });
