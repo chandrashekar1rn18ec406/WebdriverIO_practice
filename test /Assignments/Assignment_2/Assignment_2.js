@@ -12,7 +12,7 @@ describe("Assignment_2 ", async () => {
     // It's a Dynamic webpage that's why books length will be not constant whenever page is reload or open length should be varies
     const totalLength = booksLoactor.length;
     console.log("Total number of book = " + totalLength);
-    await expect(totalLength).to.be.equal(141);
+    await expect(totalLength).to.be.equal(167);
     console.log(
       `Actual ${totalLength} and expected ${booksLoactor.length} length should be Matched`
     );
