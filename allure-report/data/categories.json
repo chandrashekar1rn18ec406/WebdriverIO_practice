@@ -1,0 +1,72 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Timeout of 60000ms exceeded. The execution in the test \"Use the hooks feature provided by wdio and generate log file TC003- gettext\" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/chandrashekar/Desktop/New WEBDriverIo/test /Assignments/Assignment_3/Assignment_3.js)",
+      "children" : [ {
+        "name" : "TC003- gettext",
+        "uid" : "a5dea60a13df930",
+        "parentUid" : "73355d8059ec619de5a5546758f120e0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652873547444,
+          "stop" : 1652873607459,
+          "duration" : 60015
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : true,
+        "parameters" : [ "chrome-101.0.4951.64" ]
+      } ],
+      "uid" : "73355d8059ec619de5a5546758f120e0"
+    }, {
+      "name" : "Cannot read properties of undefined (reading 'getText')",
+      "children" : [ {
+        "name" : "TC003 -list in array find last element ",
+        "uid" : "7e634f9632ea3825",
+        "parentUid" : "91bddb5540d1416dad3263f5ae6c9fff",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652873631059,
+          "stop" : 1652873632632,
+          "duration" : 1573
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "chrome-101.0.4951.64" ]
+      } ],
+      "uid" : "91bddb5540d1416dad3263f5ae6c9fff"
+    }, {
+      "name" : "Can't call setValue on element with selector \"[namae=\"s\"]\" because element wasn't found",
+      "children" : [ {
+        "name" : "TC005 - Add Value",
+        "uid" : "43e45db603b65fe6",
+        "parentUid" : "9d8a094f56acacea36713ff15517f96a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652873677606,
+          "stop" : 1652873690017,
+          "duration" : 12411
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "chrome-101.0.4951.64" ]
+      } ],
+      "uid" : "9d8a094f56acacea36713ff15517f96a"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

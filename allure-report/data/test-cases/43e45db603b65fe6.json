@@ -1,0 +1,104 @@
+{
+  "uid" : "43e45db603b65fe6",
+  "name" : "TC005 - Add Value",
+  "fullName" : "Use the hooks feature provided by wdio and generate log file.TC005 - Add Value",
+  "historyId" : "388fca73a393badb7e25ee24f11041ad",
+  "time" : {
+    "start" : 1652873677606,
+    "stop" : 1652873690017,
+    "duration" : 12411
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Can't call setValue on element with selector \"[namae=\"s\"]\" because element wasn't found",
+  "statusTrace" : "Error: Can't call setValue on element with selector \"[namae=\"s\"]\" because element wasn't found\n                    at async Context.<anonymous> (/Users/chandrashekar/Desktop/New WEBDriverIo/test /Assignments/Assignment_3/Assignment_3.js:50:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 2,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Can't call setValue on element with selector \"[namae=\"s\"]\" because element wasn't found",
+    "statusTrace" : "Error: Can't call setValue on element with selector \"[namae=\"s\"]\" because element wasn't found\n                    at async Context.<anonymous> (/Users/chandrashekar/Desktop/New WEBDriverIo/test /Assignments/Assignment_3/Assignment_3.js:50:5)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "601c22b6fed37cbb",
+      "name" : "Screenshot",
+      "source" : "601c22b6fed37cbb.png",
+      "type" : "image/png",
+      "size" : 648495
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "testClass",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "testMethod",
+    "value" : "TC005 - Add Value"
+  }, {
+    "name" : "package",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-101.0.4951.64"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6bf3e91098cb745b",
+      "status" : "broken",
+      "statusDetails" : "Can't call setValue on element with selector \"[namae=\"s\"]\" because element wasn't found",
+      "time" : {
+        "start" : 1652873363896,
+        "stop" : 1652873401344,
+        "duration" : 37448
+      }
+    }, {
+      "uid" : "4a348bea36e99917",
+      "status" : "broken",
+      "statusDetails" : "Can't call setValue on element with selector \"[namae=\"s\"]\" because element wasn't found",
+      "time" : {
+        "start" : 1652871539181,
+        "stop" : 1652871551930,
+        "duration" : 12749
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "43e45db603b65fe6.json",
+  "parameterValues" : [ "chrome-101.0.4951.64" ]
+}

@@ -1,0 +1,51 @@
+[ {
+  "uid" : "7e634f9632ea3825",
+  "name" : "TC003 -list in array find last element ",
+  "time" : {
+    "start" : 1652873631059,
+    "stop" : 1652873632632,
+    "duration" : 1573
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "26982374fbc2efd",
+  "name" : "TC004 - gettext",
+  "time" : {
+    "start" : 1652873632635,
+    "stop" : 1652873677605,
+    "duration" : 44970
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "147aaa570810ab72",
+  "name" : "Tc002 - getting element from array",
+  "time" : {
+    "start" : 1652873607462,
+    "stop" : 1652873631058,
+    "duration" : 23596
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "43e45db603b65fe6",
+  "name" : "TC005 - Add Value",
+  "time" : {
+    "start" : 1652873677606,
+    "stop" : 1652873690017,
+    "duration" : 12411
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "a5dea60a13df930",
+  "name" : "TC003- gettext",
+  "time" : {
+    "start" : 1652873547444,
+    "stop" : 1652873607459,
+    "duration" : 60015
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

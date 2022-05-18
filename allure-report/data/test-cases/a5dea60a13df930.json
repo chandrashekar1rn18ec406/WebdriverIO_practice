@@ -1,0 +1,85 @@
+{
+  "uid" : "a5dea60a13df930",
+  "name" : "TC003- gettext",
+  "fullName" : "Use the hooks feature provided by wdio and generate log file.TC003- gettext",
+  "historyId" : "3f528aa3c834260c55c717a97c64a2fb",
+  "time" : {
+    "start" : 1652873547444,
+    "stop" : 1652873607459,
+    "duration" : 60015
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 60000ms exceeded. The execution in the test \"Use the hooks feature provided by wdio and generate log file TC003- gettext\" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/chandrashekar/Desktop/New WEBDriverIo/test /Assignments/Assignment_3/Assignment_3.js)",
+  "statusTrace" : "Error: Timeout of 60000ms exceeded. The execution in the test \"Use the hooks feature provided by wdio and generate log file TC003- gettext\" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/chandrashekar/Desktop/New WEBDriverIo/test /Assignments/Assignment_3/Assignment_3.js)\n                    at createTimeoutError (/Users/chandrashekar/Desktop/New WEBDriverIo/node_modules/mocha/lib/errors.js:498:15)\n                    at Test.Runnable._timeoutError (/Users/chandrashekar/Desktop/New WEBDriverIo/node_modules/mocha/lib/runnable.js:431:10)\n                    at Timeout.<anonymous> (/Users/chandrashekar/Desktop/New WEBDriverIo/node_modules/mocha/lib/runnable.js:246:24)\n                    at listOnTimeout (node:internal/timers:557:17)\n                    at processTimers (node:internal/timers:500:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 2,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "testClass",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "testMethod",
+    "value" : "TC003- gettext"
+  }, {
+    "name" : "package",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-101.0.4951.64"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "299cda3d337e3bd3",
+      "status" : "broken",
+      "statusDetails" : "Timeout of 60000ms exceeded. The execution in the test \"Use the hooks feature provided by wdio and generate log file TC003- gettext\" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/chandrashekar/Desktop/New WEBDriverIo/test /Assignments/Assignment_3/Assignment_3.js)",
+      "time" : {
+        "start" : 1652873275753,
+        "stop" : 1652873335757,
+        "duration" : 60004
+      }
+    }, {
+      "uid" : "d5eb9c707c363f02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652871515090,
+        "stop" : 1652871532983,
+        "duration" : 17893
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a5dea60a13df930.json",
+  "parameterValues" : [ "chrome-101.0.4951.64" ]
+}

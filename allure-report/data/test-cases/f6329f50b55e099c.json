@@ -1,0 +1,60 @@
+{
+  "uid" : "f6329f50b55e099c",
+  "name" : "Tc002 - getting element from array",
+  "fullName" : "Use the hooks feature provided by wdio and generate log file.Tc002 - getting element from array",
+  "historyId" : "aa7c1aa006dd9caef63de1cf3537c33b",
+  "time" : {
+    "start" : 1652871532983,
+    "stop" : 1652871535505,
+    "duration" : 2522
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "testClass",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "testMethod",
+    "value" : "Tc002 - getting element from array"
+  }, {
+    "name" : "package",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-101.0.4951.64"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f6329f50b55e099c.json",
+  "parameterValues" : [ "chrome-101.0.4951.64" ]
+}

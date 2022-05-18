@@ -1,50 +1,36 @@
 describe("Use the hooks feature provided by wdio and generate log file", async () => {
   //First testCase is Passed
-  it("First test case", async () => {
-    const urlLink = "https://openlibrary.org/";
-    await browser.url(urlLink);
-    const title = await browser.getTitle();
-    console.log("Title is :- " + title);
+  it("TC001- gettext", async () => {
+    await browser.url("https://www.freshworks.com/");
+    await $(".nav-label[href='/customers/']").click();
   });
-  //Second test case is Failed
-  it("count the number of books showing up in the page", async () => {
-    await browser.url("https://openlibrary.org/");
-    //Here we maximizewindow
-    await browser.maximizeWindow();
-    await browser.pause(3000);
-    const booksLoactor = await $$("div.book-cover > a>img");
-    const totalLength = booksLoactor.length;
-    console.log("Total number of book = " + totalLength);
-    await expect(totalLength).to.be.equal(167);
-  });
-  //Third test case passed
-  it("list in array find last element ", async () => {
+  //Second test case is passed
+  it("Tc002 - getting element from array", async () => {
     await browser.url("https://jqueryui.com/");
     var element = await $$(".menu-item");
+    var elm = element[3];
+    console.log("Getting a text of fourth item === ", await elm.getText());
+  });
+  //Third test case failed
+  it("TC003 -list in array find last element ", async () => {
+    await browser.url("https://jqueryui.com/");
+    var element = await $$(".menus-item");
     var elem = element[element.length - 1];
     console.log("find last element in array is ==  ", await elem.getText());
   });
 
-  //Forth Test case failed
-  it("TC002- enter the value of input field and click", async () => {
-    browser.url("https://www.amazon.com/");
-    const enterText = await $("input#twotabsearchtextbox");
-    await enterText.setValue("Macbook air");
-    await browser.pause(2000);
-    const searchBox = await $("input#nav-qsearch-submit-button");
-    await searchBox.click();
+  //Forth Test case pas
+  it("TC004 - gettext", async () => {
+    browser.url("https://www.freshworks.com/");
+    const getText = await $("h1").getText();
+    console.log(getText);
   });
-  //Five Test case passed
-  it("Dynamic Dropdown Controls Smoke", async () => {
-    await browser.url("https://www.rahulshettyacademy.com/AutomationPractice/");
-    await $("#autocomplete").setValue("ind");
+  //Five Test case failed
+  it("TC005 - Add Value", async () => {
+    await browser.url("https://jquery.com/");
+    await $('[namae="s"]').setValue("Search");
     await browser.pause(3000);
-    let items = await $$("[class='ui-menu-item'] div");
-    for (var i = 0; i < (await items.length); i++) {
-      if ((await items[i].getText()) === "India") {
-        await items[i].click();
-        //await browser.pause(3000)
-      }
-    }
+    await $('[name="s"]').addValue("Selectors");
+    await browser.pause(3000);
   });
 });

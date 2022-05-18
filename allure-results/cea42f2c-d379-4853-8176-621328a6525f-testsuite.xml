@@ -1,0 +1,101 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652873275753' stop='1652873401345'>
+    <name>Use the hooks feature provided by wdio and generate log file</name>
+    <title>Use the hooks feature provided by wdio and generate log file</title>
+    <test-cases>
+        <test-case start='1652873275753' status='broken' stop='1652873335757'>
+            <name>TC003- gettext</name>
+            <title>TC003- gettext</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.64'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timeout of 60000ms exceeded. The execution in the test "Use the hooks feature provided by wdio and generate log file TC003- gettext" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/chandrashekar/Desktop/New WEBDriverIo/test /Assignments/Assignment_3/Assignment_3.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. The execution in the test "Use the hooks feature provided by wdio and generate log file TC003- gettext" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/chandrashekar/Desktop/New WEBDriverIo/test /Assignments/Assignment_3/Assignment_3.js)
+                    at createTimeoutError (/Users/chandrashekar/Desktop/New WEBDriverIo/node_modules/mocha/lib/errors.js:498:15)
+                    at Test.Runnable._timeoutError (/Users/chandrashekar/Desktop/New WEBDriverIo/node_modules/mocha/lib/runnable.js:431:10)
+                    at Timeout.&lt;anonymous> (/Users/chandrashekar/Desktop/New WEBDriverIo/node_modules/mocha/lib/runnable.js:246:24)
+                    at listOnTimeout (node:internal/timers:557:17)
+                    at processTimers (node:internal/timers:500:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1652873335758' status='passed' stop='1652873354634'>
+            <name>Tc002 - getting element from array</name>
+            <title>Tc002 - getting element from array</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.64'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1652873354635' status='broken' stop='1652873356285'>
+            <name>TC003 -list in array find last element </name>
+            <title>TC003 -list in array find last element </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.64'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='fd2a6a87-169f-4e4b-a543-e40f497744d8-attachment.png' type='image/png' size='724649'/>
+            </attachments>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'getText')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'getText')
+                    at Context.&lt;anonymous> (/Users/chandrashekar/Desktop/New WEBDriverIo/test /Assignments/Assignment_3/Assignment_3.js:38:66)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1652873356285' status='passed' stop='1652873363896'>
+            <name>TC004 - gettext</name>
+            <title>TC004 - gettext</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.64'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1652873363896' status='broken' stop='1652873401344'>
+            <name>TC005 - Add Value</name>
+            <title>TC005 - Add Value</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.64'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='caf54cae-fe32-4864-b0e4-e376490b4170-attachment.png' type='image/png' size='633883'/>
+            </attachments>
+            <failure>
+                <message>Can't call setValue on element with selector "[namae="s"]" because element wasn't found</message>
+                <stack-trace>Error: Can't call setValue on element with selector "[namae="s"]" because element wasn't found
+                    at async Context.&lt;anonymous> (/Users/chandrashekar/Desktop/New WEBDriverIo/test /Assignments/Assignment_3/Assignment_3.js:50:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,62 @@
+{
+  "uid" : "4a348bea36e99917",
+  "name" : "TC005 - Add Value",
+  "fullName" : "Use the hooks feature provided by wdio and generate log file.TC005 - Add Value",
+  "historyId" : "388fca73a393badb7e25ee24f11041ad",
+  "time" : {
+    "start" : 1652871539181,
+    "stop" : 1652871551930,
+    "duration" : 12749
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Can't call setValue on element with selector \"[namae=\"s\"]\" because element wasn't found",
+  "statusTrace" : "Error: Can't call setValue on element with selector \"[namae=\"s\"]\" because element wasn't found\n                    at async Context.<anonymous> (/Users/chandrashekar/Desktop/New WEBDriverIo/test /Assignments/Assignment_3/Assignment_3.js:50:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "testClass",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "testMethod",
+    "value" : "TC005 - Add Value"
+  }, {
+    "name" : "package",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-101.0.4951.64"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4a348bea36e99917.json",
+  "parameterValues" : [ "chrome-101.0.4951.64" ]
+}

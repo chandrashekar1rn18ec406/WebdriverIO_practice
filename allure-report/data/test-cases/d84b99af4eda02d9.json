@@ -1,0 +1,62 @@
+{
+  "uid" : "d84b99af4eda02d9",
+  "name" : "TC003 -list in array find last element ",
+  "fullName" : "Use the hooks feature provided by wdio and generate log file.TC003 -list in array find last element ",
+  "historyId" : "9f106e317cd8c937f810f6a52d3aa490",
+  "time" : {
+    "start" : 1652871535505,
+    "stop" : 1652871536214,
+    "duration" : 709
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Cannot read properties of undefined (reading 'getText')",
+  "statusTrace" : "TypeError: Cannot read properties of undefined (reading 'getText')\n                    at Context.<anonymous> (/Users/chandrashekar/Desktop/New WEBDriverIo/test /Assignments/Assignment_3/Assignment_3.js:38:66)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "testClass",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "testMethod",
+    "value" : "TC003 -list in array find last element "
+  }, {
+    "name" : "package",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-101.0.4951.64"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d84b99af4eda02d9.json",
+  "parameterValues" : [ "chrome-101.0.4951.64" ]
+}

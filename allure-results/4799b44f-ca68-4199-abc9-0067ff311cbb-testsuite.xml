@@ -1,0 +1,90 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1652871515090' stop='1652871551931'>
+    <name>Use the hooks feature provided by wdio and generate log file</name>
+    <title>Use the hooks feature provided by wdio and generate log file</title>
+    <test-cases>
+        <test-case start='1652871515090' status='passed' stop='1652871532983'>
+            <name>TC003- gettext</name>
+            <title>TC003- gettext</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.64'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1652871532983' status='passed' stop='1652871535505'>
+            <name>Tc002 - getting element from array</name>
+            <title>Tc002 - getting element from array</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.64'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1652871535505' status='broken' stop='1652871536214'>
+            <name>TC003 -list in array find last element </name>
+            <title>TC003 -list in array find last element </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.64'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'getText')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'getText')
+                    at Context.&lt;anonymous> (/Users/chandrashekar/Desktop/New WEBDriverIo/test /Assignments/Assignment_3/Assignment_3.js:38:66)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1652871536215' status='passed' stop='1652871539181'>
+            <name>TC004 - gettext</name>
+            <title>TC004 - gettext</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.64'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='cfb328f3-4097-412b-ab85-f7178b83cf35-attachment.png' type='image/png' size='725341'/>
+            </attachments>
+        </test-case>
+        <test-case start='1652871539181' status='broken' stop='1652871551930'>
+            <name>TC005 - Add Value</name>
+            <title>TC005 - Add Value</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.64'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call setValue on element with selector "[namae="s"]" because element wasn't found</message>
+                <stack-trace>Error: Can't call setValue on element with selector "[namae="s"]" because element wasn't found
+                    at async Context.&lt;anonymous> (/Users/chandrashekar/Desktop/New WEBDriverIo/test /Assignments/Assignment_3/Assignment_3.js:50:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

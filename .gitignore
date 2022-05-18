@@ -1,8 +1,8 @@
-.vscode
-allure-report
-allure-results
-node_modules
-WebdriverIO_practice
-config
+# .vscode
+# allure-report
+# allure-results
+# node_modules
+# WebdriverIO_practice
+# config
 
 

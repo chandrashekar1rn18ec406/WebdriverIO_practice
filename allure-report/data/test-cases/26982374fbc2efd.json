@@ -1,0 +1,94 @@
+{
+  "uid" : "26982374fbc2efd",
+  "name" : "TC004 - gettext",
+  "fullName" : "Use the hooks feature provided by wdio and generate log file.TC004 - gettext",
+  "historyId" : "848102e1cdddbaf5b4bbd35d8b029c42",
+  "time" : {
+    "start" : 1652873632635,
+    "stop" : 1652873677605,
+    "duration" : 44970
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 2,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d4f0b9c12036ff72",
+      "name" : "Screenshot",
+      "source" : "d4f0b9c12036ff72.png",
+      "type" : "image/png",
+      "size" : 698237
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "testClass",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "testMethod",
+    "value" : "TC004 - gettext"
+  }, {
+    "name" : "package",
+    "value" : "Use the hooks feature provided by wdio and generate log file"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-101.0.4951.64"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "9429cf384ae4bb02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652873356285,
+        "stop" : 1652873363896,
+        "duration" : 7611
+      }
+    }, {
+      "uid" : "b05be3efd82f14e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652871536215,
+        "stop" : 1652871539181,
+        "duration" : 2966
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "26982374fbc2efd.json",
+  "parameterValues" : [ "chrome-101.0.4951.64" ]
+}
