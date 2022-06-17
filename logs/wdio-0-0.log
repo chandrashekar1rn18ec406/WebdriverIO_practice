@@ -1,0 +1,264 @@
+2022-05-20T06:21:58.721Z INFO @wdio/local-runner: Run worker command: run
+2022-05-20T06:21:58.846Z INFO webdriver: Initiate new session using the WebDriver protocol
+2022-05-20T06:21:58.870Z INFO webdriver: [POST] http://localhost:9515/session
+2022-05-20T06:21:58.870Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: { browserName: 'chrome', acceptInsecureCerts: true },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: { browserName: 'chrome', acceptInsecureCerts: true }
+}
+2022-05-20T06:21:59.744Z INFO webdriver: COMMAND navigateTo("https://www.freshworks.com/")
+2022-05-20T06:21:59.744Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/url
+2022-05-20T06:21:59.744Z INFO webdriver: DATA { url: 'https://www.freshworks.com/' }
+2022-05-20T06:22:03.912Z INFO webdriver: COMMAND findElement("css selector", ".nav-label[href='/customers/']")
+2022-05-20T06:22:03.912Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/element
+2022-05-20T06:22:03.912Z INFO webdriver: DATA { using: 'css selector', value: ".nav-label[href='/customers/']" }
+2022-05-20T06:22:03.919Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '5b214057-b6c8-4318-ad5f-82d2b7249a74'
+}
+2022-05-20T06:22:03.922Z INFO webdriver: COMMAND elementClick("5b214057-b6c8-4318-ad5f-82d2b7249a74")
+2022-05-20T06:22:03.922Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/element/5b214057-b6c8-4318-ad5f-82d2b7249a74/click
+2022-05-20T06:22:07.408Z INFO webdriver: COMMAND navigateTo("https://jqueryui.com/")
+2022-05-20T06:22:07.408Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/url
+2022-05-20T06:22:07.409Z INFO webdriver: DATA { url: 'https://jqueryui.com/' }
+2022-05-20T06:22:09.445Z INFO webdriver: COMMAND findElements("css selector", ".menu-item")
+2022-05-20T06:22:09.446Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:09.446Z INFO webdriver: DATA { using: 'css selector', value: '.menu-item' }
+2022-05-20T06:22:09.458Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '0f72a9ef-8935-413b-907e-d3c4f47f910e'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '2d7357d4-d792-4c9d-9e87-5af1a7391c7e'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'aeb2a257-6014-4b92-9b89-da842c2f23e4'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '4e19e28a-4cf1-4230-bae6-d8962e4d61dd'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'c6916af8-5b95-47ee-a0e8-733a8589d313'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'adbbc97a-1233-474c-a504-945d9ced6f51'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '9afc1112-0556-4778-93f0-067e37435ccd'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '84f85aae-2dd4-4b36-9f5c-5225c92297f0'
+  }
+]
+2022-05-20T06:22:09.467Z INFO webdriver: COMMAND getElementText("4e19e28a-4cf1-4230-bae6-d8962e4d61dd")
+2022-05-20T06:22:09.467Z INFO webdriver: [GET] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/element/4e19e28a-4cf1-4230-bae6-d8962e4d61dd/text
+2022-05-20T06:22:09.477Z INFO webdriver: RESULT Themes
+2022-05-20T06:22:09.479Z INFO webdriver: COMMAND navigateTo("https://jqueryui.com/")
+2022-05-20T06:22:09.479Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/url
+2022-05-20T06:22:09.479Z INFO webdriver: DATA { url: 'https://jqueryui.com/' }
+2022-05-20T06:22:09.803Z INFO webdriver: COMMAND findElements("css selector", ".menus-item")
+2022-05-20T06:22:09.803Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:09.803Z INFO webdriver: DATA { using: 'css selector', value: '.menus-item' }
+2022-05-20T06:22:09.811Z INFO webdriver: RESULT []
+2022-05-20T06:22:09.812Z INFO webdriver: COMMAND findElement("css selector", "h1")
+2022-05-20T06:22:09.812Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/element
+2022-05-20T06:22:09.812Z INFO webdriver: DATA { using: 'css selector', value: 'h1' }
+2022-05-20T06:22:09.814Z INFO webdriver: COMMAND navigateTo("https://www.freshworks.com/")
+2022-05-20T06:22:09.814Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/url
+2022-05-20T06:22:09.814Z INFO webdriver: DATA { url: 'https://www.freshworks.com/' }
+2022-05-20T06:22:09.821Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":"h1"}\n' +
+    '  (Session info: chrome=101.0.4951.64)',
+  stacktrace: '0   chromedriver                        0x00000001025649a0 chromedriver + 4426144\n' +
+    '1   chromedriver                        0x00000001024fe798 chromedriver + 4007832\n' +
+    '2   chromedriver                        0x000000010215acc4 chromedriver + 191684\n' +
+    '3   chromedriver                        0x00000001021898d4 chromedriver + 383188\n' +
+    '4   chromedriver                        0x00000001021b2648 chromedriver + 550472\n' +
+    '5   chromedriver                        0x000000010217ecf4 chromedriver + 339188\n' +
+    '6   chromedriver                        0x000000010253b7d0 chromedriver + 4257744\n' +
+    '7   chromedriver                        0x000000010253f580 chromedriver + 4273536\n' +
+    '8   chromedriver                        0x00000001025436c4 chromedriver + 4290244\n' +
+    '9   chromedriver                        0x000000010253fcf8 chromedriver + 4275448\n' +
+    '10  chromedriver                        0x000000010251fb38 chromedriver + 4143928\n' +
+    '11  chromedriver                        0x000000010255721c chromedriver + 4370972\n' +
+    '12  chromedriver                        0x0000000102557380 chromedriver + 4371328\n' +
+    '13  chromedriver                        0x000000010256b154 chromedriver + 4452692\n' +
+    '14  libsystem_pthread.dylib             0x000000019056426c _pthread_start + 148\n' +
+    '15  libsystem_pthread.dylib             0x000000019055f08c thread_start + 8\n'
+}
+2022-05-20T06:22:09.823Z INFO webdriver: COMMAND findElements("css selector", "h1")
+2022-05-20T06:22:09.823Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:09.823Z INFO webdriver: DATA { using: 'css selector', value: 'h1' }
+2022-05-20T06:22:12.404Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '935be385-fc5a-4bb8-a302-0dc04b04b546'
+  }
+]
+2022-05-20T06:22:12.405Z INFO webdriver: COMMAND findElement("css selector", "h1")
+2022-05-20T06:22:12.406Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/element
+2022-05-20T06:22:12.406Z INFO webdriver: DATA { using: 'css selector', value: 'h1' }
+2022-05-20T06:22:12.411Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '935be385-fc5a-4bb8-a302-0dc04b04b546'
+}
+2022-05-20T06:22:12.412Z INFO webdriver: COMMAND getElementText("935be385-fc5a-4bb8-a302-0dc04b04b546")
+2022-05-20T06:22:12.412Z INFO webdriver: [GET] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/element/935be385-fc5a-4bb8-a302-0dc04b04b546/text
+2022-05-20T06:22:12.418Z INFO webdriver: RESULT Love your software
+2022-05-20T06:22:12.418Z INFO webdriver: COMMAND navigateTo("https://jquery.com/")
+2022-05-20T06:22:12.418Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/url
+2022-05-20T06:22:12.418Z INFO webdriver: DATA { url: 'https://jquery.com/' }
+2022-05-20T06:22:14.127Z INFO webdriver: COMMAND findElement("css selector", "[namae="s"]")
+2022-05-20T06:22:14.127Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/element
+2022-05-20T06:22:14.127Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:14.136Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":"[namae="s"]"}\n' +
+    '  (Session info: chrome=101.0.4951.64)',
+  stacktrace: '0   chromedriver                        0x00000001025649a0 chromedriver + 4426144\n' +
+    '1   chromedriver                        0x00000001024fe798 chromedriver + 4007832\n' +
+    '2   chromedriver                        0x000000010215acc4 chromedriver + 191684\n' +
+    '3   chromedriver                        0x00000001021898d4 chromedriver + 383188\n' +
+    '4   chromedriver                        0x00000001021b2648 chromedriver + 550472\n' +
+    '5   chromedriver                        0x000000010217ecf4 chromedriver + 339188\n' +
+    '6   chromedriver                        0x000000010253b7d0 chromedriver + 4257744\n' +
+    '7   chromedriver                        0x000000010253f580 chromedriver + 4273536\n' +
+    '8   chromedriver                        0x00000001025436c4 chromedriver + 4290244\n' +
+    '9   chromedriver                        0x000000010253fcf8 chromedriver + 4275448\n' +
+    '10  chromedriver                        0x000000010251fb38 chromedriver + 4143928\n' +
+    '11  chromedriver                        0x000000010255721c chromedriver + 4370972\n' +
+    '12  chromedriver                        0x0000000102557380 chromedriver + 4371328\n' +
+    '13  chromedriver                        0x000000010256b154 chromedriver + 4452692\n' +
+    '14  libsystem_pthread.dylib             0x000000019056426c _pthread_start + 148\n' +
+    '15  libsystem_pthread.dylib             0x000000019055f08c thread_start + 8\n'
+}
+2022-05-20T06:22:14.138Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:14.138Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:14.138Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:14.146Z INFO webdriver: RESULT []
+2022-05-20T06:22:14.641Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:14.642Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:14.642Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:14.651Z INFO webdriver: RESULT []
+2022-05-20T06:22:15.141Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:15.141Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:15.142Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:15.150Z INFO webdriver: RESULT []
+2022-05-20T06:22:15.640Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:15.640Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:15.640Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:15.648Z INFO webdriver: RESULT []
+2022-05-20T06:22:16.140Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:16.140Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:16.140Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:16.149Z INFO webdriver: RESULT []
+2022-05-20T06:22:16.640Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:16.640Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:16.640Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:16.647Z INFO webdriver: RESULT []
+2022-05-20T06:22:17.140Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:17.141Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:17.141Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:17.150Z INFO webdriver: RESULT []
+2022-05-20T06:22:17.640Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:17.640Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:17.640Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:17.650Z INFO webdriver: RESULT []
+2022-05-20T06:22:18.140Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:18.140Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:18.140Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:18.147Z INFO webdriver: RESULT []
+2022-05-20T06:22:18.640Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:18.641Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:18.641Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:18.651Z INFO webdriver: RESULT []
+2022-05-20T06:22:19.140Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:19.140Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:19.140Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:19.149Z INFO webdriver: RESULT []
+2022-05-20T06:22:19.638Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:19.639Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:19.639Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:19.647Z INFO webdriver: RESULT []
+2022-05-20T06:22:20.140Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:20.140Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:20.140Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:20.148Z INFO webdriver: RESULT []
+2022-05-20T06:22:20.640Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:20.641Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:20.641Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:20.652Z INFO webdriver: RESULT []
+2022-05-20T06:22:21.140Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:21.141Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:21.141Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:21.151Z INFO webdriver: RESULT []
+2022-05-20T06:22:21.640Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:21.641Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:21.641Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:21.650Z INFO webdriver: RESULT []
+2022-05-20T06:22:22.139Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:22.139Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:22.139Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:22.145Z INFO webdriver: RESULT []
+2022-05-20T06:22:22.640Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:22.640Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:22.640Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:22.649Z INFO webdriver: RESULT []
+2022-05-20T06:22:23.140Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:23.140Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:23.140Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:23.150Z INFO webdriver: RESULT []
+2022-05-20T06:22:23.639Z INFO webdriver: COMMAND findElements("css selector", "[namae="s"]")
+2022-05-20T06:22:23.639Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/elements
+2022-05-20T06:22:23.639Z INFO webdriver: DATA { using: 'css selector', value: '[namae="s"]' }
+2022-05-20T06:22:23.647Z INFO webdriver: RESULT []
+2022-05-20T06:22:24.153Z INFO webdriver: COMMAND getLogTypes()
+2022-05-20T06:22:24.153Z INFO webdriver: [GET] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/se/log/types
+2022-05-20T06:22:24.155Z INFO webdriver: RESULT [ 'browser', 'driver' ]
+2022-05-20T06:22:24.156Z INFO webdriver: COMMAND getLogs("driver")
+2022-05-20T06:22:24.156Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/se/log
+2022-05-20T06:22:24.156Z INFO webdriver: DATA { type: 'driver' }
+2022-05-20T06:22:24.156Z INFO webdriver: COMMAND getLogs("browser")
+2022-05-20T06:22:24.156Z INFO webdriver: [POST] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa/se/log
+2022-05-20T06:22:24.156Z INFO webdriver: DATA { type: 'browser' }
+2022-05-20T06:22:24.158Z INFO webdriver: RESULT []
+2022-05-20T06:22:24.159Z INFO webdriver: RESULT [
+  {
+    level: 'WARNING',
+    message: 'https://www.freshworks.com/ 24 A parser-blocking, cross site (i.e. different eTLD+1) script, https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.',
+    source: 'javascript',
+    timestamp: 1653027720345
+  },
+  {
+    level: 'WARNING',
+    message: 'https://www.freshworks.com/ 24 A parser-blocking, cross site (i.e. different eTLD+1) script, https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.',
+    source: 'javascript',
+    timestamp: 1653027720345
+  },
+  {
+    level: 'WARNING',
+    message: 'https://www.freshworks.com/customers/ 24 A parser-blocking, cross site (i.e. different eTLD+1) script, https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.',
+    source: 'javascript',
+    timestamp: 1653027724442
+  },
+  {
+    level: 'WARNING',
+    message: 'https://www.freshworks.com/customers/ 24 A parser-blocking, cross site (i.e. different eTLD+1) script, https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.',
+    source: 'javascript',
+    timestamp: 1653027724442
+  },
+  {
+    level: 'WARNING',
+    message: 'https://www.freshworks.com/ 24 A parser-blocking, cross site (i.e. different eTLD+1) script, https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.',
+    source: 'javascript',
+    timestamp: 1653027729879
+  },
+  {
+    level: 'WARNING',
+    message: 'https://www.freshworks.com/ 24 A parser-blocking, cross site (i.e. different eTLD+1) script, https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.',
+    source: 'javascript',
+    timestamp: 1653027729880
+  }
+]
+2022-05-20T06:22:24.160Z INFO webdriver: COMMAND deleteSession()
+2022-05-20T06:22:24.160Z INFO webdriver: [DELETE] http://localhost:9515/session/35722370f7a92c682647f1e25ab49baa
